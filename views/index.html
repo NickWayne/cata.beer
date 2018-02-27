@@ -1,31 +1,54 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Test Serve</title>
-        <meta name="description" content="Catalog of different beers">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    </head>
-    <body>
-        <h1>HTML Ipsum Presents</h1>
 
-        <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<head>
+    <meta charset="utf-8">
+    <title>Test Serve</title>
+    <meta name="description" content="Catalog of different beers">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 
-        <h2>Header Level 2</h2>
-
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ol>
-
-        <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-        <h3>Header Level 3</h3>
-
-        <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-            <li>Aliquam tincidunt mauris eu risus.</li>
-        </ul>
-    </body>
+<body>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Cata.Beer</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#">Beer</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent hide-on-med-and-up show-on-medium">
+                <li class="tab"><a href="#">Beer</a></li>
+                <li class="tab"><a href="#">Ingredients</a></li>
+                <li class="tab"><a href="#">Users</a></li>
+                <li class="tab"><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+                <div class="card-image">
+                  <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/28/15/istock-520704188-1.jpg">
+                  <span class="card-title">Beer Name</span>
+                </div>
+               <div class="card-content white-text">
+                    <span class="card-title">BeerName</span>
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">Ingredients</a>
+                    <a href="#">Brewery</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </html>
