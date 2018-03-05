@@ -1,16 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="beerapp">
 
 <head>
     <meta charset="utf-8">
-    <title>Test Serve</title>
+    <title>Cata.Beer</title>
     <meta name="description" content="Catalog of different beers">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="core.js"></script>
 </head>
 
-<body>
+<body ng-controller="testController">
     <nav class="nav-extended">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Cata.Beer</a>
@@ -31,15 +35,17 @@
         </div>
     </nav>
     <div class="row">
-        <div class="col s12 m6">
+        <div class="col s12 m4 l2" ng-repeat="beer in beers">
             <div class="card blue-grey darken-1">
                 <div class="card-image">
-                  <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/28/15/istock-520704188-1.jpg">
-                  <span class="card-title">Beer Name</span>
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/28/15/istock-520704188-1.jpg">
                 </div>
-               <div class="card-content white-text">
-                    <span class="card-title">BeerName</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                <div class="card-content white-text">
+                    <span class="card-title activator">{{ beer.name }}<i class="material-icons right">arrow_upward</i></span>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title">{{ beer.name }}<i class="material-icons right">close</i></span>
+                    <p>{{ beer.description }}</p>
                 </div>
                 <div class="card-action">
                     <a href="#">Ingredients</a>
@@ -49,6 +55,7 @@
         </div>
     </div>
 </body>
+<script src="/node_modules/angular/angular.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </html>
