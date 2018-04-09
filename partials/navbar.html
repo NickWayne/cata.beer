@@ -1,0 +1,23 @@
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Cata.Beer</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Beer</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Users</a></li>
+            <% if(username != "Login") { %>
+                <li><a href="logout">Logout <%= username %></a></li>
+            <% }else { %>
+                <li><a href="login"><%= username %></a></li>
+            <% } %>
+        </ul>
+    </div>
+    <div class="nav-content">
+        <ul class="tabs tabs-transparent hide-on-med-and-up show-on-medium">
+            <li class="tab"><a href="/">Beer</a></li>
+            <li class="tab"><a href="#">Ingredients</a></li>
+            <li class="tab"><a href="#">Users</a></li>
+            <li class="tab"><a href="login"><%= username %></a></li>
+        </ul>
+    </div>
+</nav>

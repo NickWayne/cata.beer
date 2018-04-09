@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" ng-app="beerapp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cata.Beer</title>
+    <meta name="description" content="Catalog of different beers">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body ng-controller="testController">
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Cata.Beer</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Beer</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="login">Login</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent hide-on-med-and-up show-on-medium">
+                <li class="tab"><a href="/">Beer</a></li>
+                <li class="tab"><a href="#">Ingredients</a></li>
+                <li class="tab"><a href="#">Users</a></li>
+                <li class="tab"><a href="login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form action="/register" method="post" class="container col s12">
+        <div class="card-panel zdepth-3">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="username" type="text" class="validate">
+                <label for="username">Username</label>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input name="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input name="password2" type="password" class="validate">
+                    <label for="password2">Confirm Password</label>
+                </div>
+            </div>
+            <input class="waves-effect waves-light btn" type="submit" id="submit_button" value="Create Account">
+        </div>
+    </form>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</html>

@@ -7,14 +7,21 @@
   },
   "dependencies": {
     "angular": "^1.6.9",
+    "bcryptjs": "^2.4.3",
     "body-parser": "~1.18.2",
     "brewerydb-node": "0.0.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.2",
     "materialize-css": "^0.100.2",
+    "mongodb": "^3.0.5",
     "morgan": "~1.9.0",
+    "node-gyp": "^3.6.2",
+    "nunjucks": "^3.1.2",
     "pug": "2.0.0-beta11",
+    "request": "^2.85.0",
     "serve-favicon": "~2.4.5"
   }
 }
